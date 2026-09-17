@@ -1,6 +1,6 @@
 import Logo from "./Logo";
-import Arrow from "./Arrow";
 import Botanical from "./Botanical";
+import NewsletterSignup from "./NewsletterSignup";
 
 const EXPLORE_LINKS = [
   { label: "Spaces", href: "#spaces" },
@@ -42,9 +42,13 @@ export default function Footer() {
         <div>
           <div className="text-eyebrow mb-4 text-bone/70">Contact</div>
           <p className="text-body text-bone/90">
-            (845) 555-0173
+            <a href="tel:+18455550173" className="hover:text-bone">
+              (845) 555-0173
+            </a>
             <br />
-            hello@wrenfield.com
+            <a href="mailto:hello@wrenfield.com" className="hover:text-bone">
+              hello@wrenfield.com
+            </a>
             <br />
             Mon&ndash;Sat, 9am&ndash;6pm
           </p>
@@ -68,16 +72,7 @@ export default function Footer() {
         <div className="text-eyebrow text-bone/70">
           Two emails a year. Open dates and the occasional cancellation.
         </div>
-        <div className="mt-4 flex max-w-sm items-center gap-3 border-b border-bone/40 pb-2">
-          <input
-            type="email"
-            placeholder="Your email"
-            className="text-spec w-full bg-transparent text-bone placeholder:text-bone/50 focus:outline-none"
-          />
-          <button type="button" aria-label="Register to our newsletter" className="text-bone">
-            <Arrow />
-          </button>
-        </div>
+        <NewsletterSignup />
       </div>
 
       <div className="text-spec mt-16 flex flex-wrap items-center justify-between gap-4 text-bone/60">

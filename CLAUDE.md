@@ -32,11 +32,20 @@ Seeded RNG for standing layout — never Math.random() in render.
 ## Never
 - No preloader
 - No scroll snapping or scroll hijacking
-- No custom cursor
 - Sticky stacking on four transitions only, not every section
 - No localStorage or sessionStorage
 - No gradients except the headline text-fill
 - No drop shadows
+
+## Custom cursor (override, approved 2026-09-16)
+Ted explicitly asked to override the original "no custom cursor" rule.
+Line-art crosshair (✕, matching the planner's chair glyph) in
+CustomCursor.tsx, smooth-follows via gsap.quickTo, idle rotation sway,
+scales/rotates to a + on hover over interactive elements.
+Fine-pointer devices only (matchMedia 'pointer: fine') — never touch.
+cursor:none is applied via a JS-added class, never a static CSS rule,
+so JS-disabled and touch users always keep the native cursor.
+Respects prefers-reduced-motion (idle sway skipped, tracking stays).
 
 ## Quality floor
 Site fully usable with JavaScript disabled — planner degrades to the

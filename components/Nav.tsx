@@ -36,7 +36,9 @@ export default function Nav() {
         </nav>
 
         <div className="hidden items-center gap-6 lg:flex">
-          <span className="text-spec text-ink">(845) 555-0173</span>
+          <a href="tel:+18455550173" className="text-spec text-ink hover:text-stone">
+            (845) 555-0173
+          </a>
           <PillButton variant="fill" href="#contact">
             Check a date
           </PillButton>
@@ -78,7 +80,9 @@ export default function Nav() {
             </a>
           ))}
           <div className="mt-4 flex flex-col gap-4">
-            <span className="text-spec text-ink">(845) 555-0173</span>
+            <a href="tel:+18455550173" className="text-spec text-ink hover:text-stone">
+            (845) 555-0173
+          </a>
             <PillButton variant="fill" href="#contact" onClick={() => setOpen(false)}>
               Check a date
             </PillButton>

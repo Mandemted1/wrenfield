@@ -109,7 +109,11 @@ export default function Enquiry() {
         <p className="text-body mt-8 max-w-xl">
           Got it. We&rsquo;ll come back within one business day with whether
           that date is free and a real estimate for your numbers. If
-          it&rsquo;s urgent, call (845) 555-0173.
+          it&rsquo;s urgent, call{" "}
+          <a href="tel:+18455550173" className="underline underline-offset-2 hover:text-stone">
+            (845) 555-0173
+          </a>
+          .
         </p>
       </section>
     );
@@ -198,9 +202,12 @@ export default function Enquiry() {
       </div>
 
       <p className="text-spec mt-6 text-stone">
-        Or call (845) 555-0173, Monday to Saturday, 9am to 6pm. If
-        you&rsquo;ve used the planner above, your layout comes through with
-        this.
+        Or call{" "}
+        <a href="tel:+18455550173" className="underline underline-offset-2 hover:text-ink">
+          (845) 555-0173
+        </a>
+        , Monday to Saturday, 9am to 6pm. If you&rsquo;ve used the planner
+        above, your layout comes through with this.
       </p>
     </section>
   );

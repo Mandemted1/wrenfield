@@ -4,6 +4,7 @@ import Providers from "./providers";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ScrollIndicator from "@/components/ScrollIndicator";
+import CustomCursor from "@/components/CustomCursor";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
           <Footer />
           <ScrollIndicator />
+          <CustomCursor />
         </Providers>
       </body>
     </html>

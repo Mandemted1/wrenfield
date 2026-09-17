@@ -73,7 +73,7 @@ const SPACES: ShowcaseItem[] = [
 
 export default function Spaces() {
   return (
-    <section id="spaces" className="scroll-mt-24 bg-bone px-6 py-24 text-ink md:px-16">
+    <section className="bg-bone px-6 py-24 text-ink md:px-16">
       <Eyebrow>The Spaces</Eyebrow>
       <ScrollFillHeading as="h2" className="text-display-lg mt-6 max-w-xl">
         Four rooms.

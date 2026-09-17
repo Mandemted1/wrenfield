@@ -30,6 +30,13 @@ input:focus-visible {
   outline-offset: 2px;
 }
 
+/* Custom cursor — only applied by CustomCursor.tsx on fine-pointer devices
+   with JS enabled, so the native cursor is untouched otherwise. */
+html.custom-cursor-on,
+html.custom-cursor-on * {
+  cursor: none !important;
+}
+
 /* Guest-count slider — build brief section 5.6: keyboard operable, visible focus, bigger mobile hit area. */
 input[type="range"] {
   accent-color: var(--color-sage);

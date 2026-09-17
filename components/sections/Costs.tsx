@@ -18,7 +18,7 @@ const ITEMS: Row[] = [
 
 export default function Costs() {
   return (
-    <section id="costs" className="scroll-mt-24 bg-forest px-6 py-24 text-bone md:px-16">
+    <section className="bg-forest px-6 py-24 text-bone md:px-16">
       <Eyebrow>The Part Everyone Hides</Eyebrow>
       <h2 className="text-display-lg mt-6 max-w-2xl">
         Our site fee is $16,000.

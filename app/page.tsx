@@ -17,13 +17,17 @@ export default function Home() {
   return (
     <main id="top">
       <StackTransition outgoing={<Hero />} incoming={<Why />} />
-      <StackTransition outgoing={<Spaces />} incoming={<PlannerSection />} />
+      <StackTransition outgoing={<Spaces />} incoming={<PlannerSection />} outgoingId="spaces" />
       <WhatWeHost />
-      <StackTransition outgoing={<Costs />} incoming={<SiteFees />} />
+      <StackTransition outgoing={<Costs />} incoming={<SiteFees />} outgoingId="costs" />
       <Accommodation />
       <Gallery />
       <HowBooking />
-      <StackTransition outgoing={<Testimonials />} incoming={<Questions />} />
+      <StackTransition
+        outgoing={<Testimonials />}
+        incoming={<Questions />}
+        outgoingId="testimonials"
+      />
       <Enquiry />
     </main>
   );

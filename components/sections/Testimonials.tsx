@@ -42,7 +42,7 @@ export default function Testimonials() {
   }
 
   return (
-    <section id="testimonials" className="scroll-mt-24 min-h-screen bg-bone px-6 pt-24 pb-24 text-ink md:px-16">
+    <section className="min-h-screen bg-bone px-6 pt-24 pb-24 text-ink md:px-16">
       <h2 className="text-display-lg">What couples say.</h2>
 
       <div className="mt-10 max-w-2xl">
